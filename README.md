@@ -1,4 +1,4 @@
-# challange portfolio Anna
+# challenge portfolio Anna
  
 ## TASK 1: SOFTWARE CONFIGURATION
 
