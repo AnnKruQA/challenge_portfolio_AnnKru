@@ -2,7 +2,7 @@
  
 ## TASK 1: SOFTWARE CONFIGURATION
 
-### Subtask 1: Why did I choose to participate in the portfolio challange?
+### Subtask 1: Why did I choose to participate in the portfolio challenge?
 
 I am a manual software tester with more than one year of commercial experience. 
 
