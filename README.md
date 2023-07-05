@@ -15,7 +15,7 @@ I would like to expand my knowledge of automated testing and Python.
 
  ## TASK 2: SELECTORS
 
-###**https://scouts-test.futbolkolektyw.pl/en/login**
+### **https://scouts-test.futbolkolektyw.pl/en/login**
 
 Login
 1. //*[@id="login"]
@@ -43,7 +43,7 @@ Remind password
 3. /html/body/div/form/div/div[1]/a
 
 
-###**https://scouts-test.futbolkolektyw.pl/pl/login**
+### **https://scouts-test.futbolkolektyw.pl/pl/login**
 
 Polski
 1. //*[@id="__next"]/form/div/div[2]/div/div
