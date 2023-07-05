@@ -15,14 +15,14 @@ I would like to expand my knowledge of automated testing and Python.
 
  ## TASK 2: SELECTORS
 
-https://scouts-test.futbolkolektyw.pl/en/login
+###**https://scouts-test.futbolkolektyw.pl/en/login**
 
 Login
 1. //*[@id="login"]
 2. /html/body/div/form/div/div[1]/div[1]/div/input
 3. //input[@name="login"]
 
-Passowrd
+Passoword
 1. //*[@id="password"]//div
 2. //input[@name="password"]
 3. /html/body/div/form/div/div[1]/div[2]/div/input//div
@@ -43,7 +43,7 @@ Remind password
 3. /html/body/div/form/div/div[1]/a
 
 
-PL https://scouts-test.futbolkolektyw.pl/pl/login?redirected=true
+###**https://scouts-test.futbolkolektyw.pl/pl/login**
 
 Polski
 1. //*[@id="__next"]/form/div/div[2]/div/div
