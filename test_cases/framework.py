@@ -4,6 +4,7 @@ from selenium import webdriver
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service
 
+
 class Test(unittest.TestCase):
 
     @classmethod
@@ -45,7 +46,7 @@ class TestMediumPage(unittest.TestCase):
     def get_page_title(self, url):
         self.driver.get(url)
         return self.driver.title
+
     @classmethod
     def tearDown(self):
         self.driver.quit()
-
