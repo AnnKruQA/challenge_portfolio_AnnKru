@@ -18,7 +18,7 @@ I would like to expand my knowledge of:
 
 ## TASK 2: SELECTORS
 
-### Subtask 2: selectors on the login page
+## Subtask 2: selectors on the login page
 
 ### https://scouts-test.futbolkolektyw.pl/en/login
 
