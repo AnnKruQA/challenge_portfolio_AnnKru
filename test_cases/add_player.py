@@ -1,11 +1,8 @@
 import os
 import unittest
 from datetime import time
-from lib2to3.pgen2 import driver
 
 from selenium import webdriver
-
-from pages import dashboard
 from utils.settings import DRIVER_PATH, IMPLICITLY_WAIT
 from selenium.webdriver.chrome.service import Service
 
@@ -13,30 +10,29 @@ from selenium.webdriver.chrome.service import Service
 from page.base_page import BasePage
 from page.dashboard import Dashboard
 from page.login_page import LoginPage
-
-class TestLoginPage(unittest.TestCase):
-
+from page.add_a_plyer import AddPlayer
+class TestAddPlayer(unittest.TestCase):
     @classmethod
     def setUp(self):
-        os.chmod(DRIVER_PATH, 755)
-        self.driver_service = Service(executable_path=DRIVER_PATH)
-        self.driver = webdriver.Chrome(service=self.driver_service)
-        self.driver.get('https://scouts-test.futbolkolektyw.pl/en')
-        self.driver.fullscreen_window()
-        self.driver.implicitly_wait(IMPLICITLY_WAIT)
-
-    def test_log_in_to_the_system(self):
-        BasePage.setUp(self)
+        TestLoginPage(unittest.TestCase)
         user_login = LoginPage(self.driver)
         user.login.title_of_the_page()
         user_login.type_in_email('user09@getnada.com')
         user_login.type_in_password('Test-1234')
         user.login.click_on_the_button("//*[text()='Sign in']")
-        dashborad_page =Dashboard(self, driver)
-        dashboard.title_of_page()
         time.sleep(5)
 
+    def test_add_a_player(self):
+        self.click_on_the_button("//*[text()='Add player']")
+        asser self.get_page_title(self.add_player_url) == expected_title
+        time.sleep(2)
 
+    class AddPlayer(BasePage):
+        expected_title = 'Add Player'
+        dashboard_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
+
+        def title_of_page(self):
+            time.sleep(4)
+            assert self.get_page_title(self.dashboard_url)=expected_title
     @classmethod
     def tearDown(self):
-        self.driver.quit()
