@@ -32,7 +32,7 @@ class TestLoginPage(unittest.TestCase):
         user.login.check_page_title()
         user_login.type_in_email('user09@getnada.com')
         user_login.type_in_password('Test-1234')
-        user.login.click_on_sign_in_button("//*[text()='Sign in']")
+        user.login.click_on_the_button("//*[text()='Sign in']")
         time.sleep(5)
         dashborad_page = Dashboard(self, driver)
         dashboard.title_of_page()
