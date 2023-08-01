@@ -31,4 +31,5 @@ class AddingMatchPlayer(BasePage):
 
     11.
     clear_button_xpath = "//*[text()='Clear']"
+
     pass
