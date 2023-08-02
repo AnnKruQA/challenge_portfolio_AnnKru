@@ -27,28 +27,26 @@ class TestAddAPlayer(unittest.TestCase):
         user.login.title_of_page()
         user_login.type_in_email('user09@getnada.com')
         user_login.type_in_password('Test-1234')
-        user.login.click_on_sign_in_button("//*[text()='Sign in']")
-        time.sleep(5)
+        user.login.click_sign_in_button("//*[text()='Sign in']")
         dasbord_page = Dasboard(self.driver)
+        dasbord_page.title_of_page()
+        time.sleep(3)
         dasboard_page.click_add_player_button()
-        time.sleep(5)
+        time.sleep(3)
         add_a_player = AddAPlayer(self.driver)
         add_a_player.title_of_page
-
-        add_a_player.type_in_email("f.kruk@gmail.com')
-        add_a_player.type_in_name('Franek')
-        add_a_player.type_in_surname('Kruk'')
+        time.sleep(3)
+        add_a_player.type_in_name('Franciszek')
+        add_a_player.type_in_surname('Kruk')
         add_a_player.type_in_age('11-11-1999')
         add_a_player.type_in_main_position('strike')
         add_a_player.click_submit_button()
+        time.sleep(3)
 
-    class AddPlayer(BasePage):
-        expected_title = 'Add Player'
-        add_player_url = 'https://scouts-test.futbolkolektyw.pl/en/players/add'
-
-        self.click_on_the_button("//*[text()='Add player']")
-        assert self.get_page_title(self.add_player_url) == expected_title
-        time.sleep(2)
+    self.click_on_the_button("//*[text()='Add player']")
+    assert self.get_page_title(self.add_player_url) == expected_title
+    time.sleep(2)
 
     @classmethod
     def tearDown(self):
+        self.driver.quit()

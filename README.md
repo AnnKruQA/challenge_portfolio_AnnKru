@@ -65,3 +65,8 @@ Zaloguj_button_xpath
 2. //*[text()="Zaloguj"]
 3. /html/body/div/form/div/div[2]/button/span[1]
 
+## TASK 4: TEST CASES
+
+### Subtask 1: Test Cases
+
+https://drive.google.com/drive/folders/1hM37NpnxZn833AiDYD_0FGqqsG5J6Rtk
